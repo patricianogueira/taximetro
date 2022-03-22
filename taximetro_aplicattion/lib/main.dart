@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taximetro_aplicattion/data/calcula_valor_viagem.dart';
+import 'package:taximetro_aplicattion/ui/home_page.dart';
 
 void main() {
   final calculaValorViagem = CalcularValorViagem(
@@ -7,6 +8,10 @@ void main() {
     kmMaximo: 10,
   );
 
-  final valorViagem = calculaValorViagem(km: 10, minuto: 30);
+  return runApp(
+    MaterialApp(
+      home: HomePage(),
+    )
+  );
 }
 
