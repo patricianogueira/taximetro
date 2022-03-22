@@ -7,10 +7,8 @@ class HomePage extends StatelessWidget {
   void showRaceValue(BuildContext context, double valorCorrida){
     showDialog(
       context: context, 
-      builder: (_) => AlertDialog(
-        content: Center(
-          child: Text('O valor da sua corrida custou R\$ ${valorCorrida.toStringAsFixed(2)}.'),
-        )
+      builder: (context) => AlertDialog(
+        content:  Text('O valor da sua corrida custou R\$ ${valorCorrida.toStringAsFixed(2)}.'),
       ),
     );
   }
