@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
       context: context, 
       builder: (_) => AlertDialog(
         content: Center(
-          child: Text('O valor da sua corrida custou R\$ $valorCorrida,00.'),
+          child: Text('O valor da sua corrida custou R\$ ${valorCorrida.toStringAsFixed(2)}.'),
         )
       ),
     );
